@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  /* width: 100vw;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -420px; */
+}
+div {
+  /* display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap; */
+  background: #ebebff;
+  margin: 15px;
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 11px 10px 17px -10px rgba(0, 0, 0, 0.7);
+}
+.form {
+  /* display: inline-block; */
+  padding: 10px;
+  width: 350px;
+  height: 350px;
+  text-align: center;
+}
+.listas {
+  /* display: inline-block; */
+  /* position: absolute; */
+  padding: 10px;
+  width: 350px;
+  min-height: 350px;
+  text-align: center;
+}
+.input-box {
+  border-radius: 20px;
+  padding: 5px;
+  margin: 5px;
+  width: 85%;
+  border: 1px solid #999;
+  outline: none;
+}
+.input-box:focus {
+  background-color: #e9e9e9;
+}
+label {
+  font-weight: bold;
+  font-size: 20px;
+}
+.button-form {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #757575;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 50px;
+  margin: 10px;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.button-form:hover {
+  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  background-color: #e9e9e9;
+}
+.button-form:active {
+  position: relative;
+  top: 1px;
+}
+
+.listas .li {
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+  box-sizing: border-box;
+}
+li button {
+  padding: 5px 5px;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #757575;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 840px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .listas,
+  .form {
+    width: 80%;
+  }
+}
